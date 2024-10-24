@@ -1,4 +1,4 @@
-# syure.my
+# syur.my
 
 ## Description of current ideas
 
