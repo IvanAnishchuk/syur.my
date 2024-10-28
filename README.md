@@ -42,12 +42,12 @@ https://github.com/ingonyama-zk/icicle/releases/tag/v3.0.0
 
 1 - Core research and PoC
 
-We are currently here. I've seen some very practical applications of sum-check (lasso+jolt) and quite impractical ZKML provers. My believe is it's not that hard to hack loGKR or similar protocol to suit ZKML inference needs and PoC runtime supporting just a couple simple operations can be produced in a few months of work and benchmarked agains other implementations (RMSNorm is pretty common, for example, I'd start there)
+We are currently here. I've seen some very practical applications of sum-check (lasso+jolt) and quite impractical ZKML provers. My believe is it's not that hard to hack loGKR or similar protocol to suit ZKML inference needs and PoC runtime supporting just a couple simple operations can be produced in a few months of work and benchmarked against other implementations (RMSNorm is pretty common, for example, I'd start there)
 
 2 - Active development
 
-Once we figure out the core protocol adding a proper runtime with feature parity with competitors will require some dedicated work of a larger team. Luckily there are some examples of ZKML runtimes already, we won't be flying blind, it's just a lot of new code, test cases, optimization, etc.
+Once we figure out the core protocol adding a proper runtime with feature parity against competitors will require some dedicated work of a larger team. Luckily there are some examples of ZKML runtimes already, we won't be flying blind, it's just a lot of new code, test cases, optimization, etc.
 
 3 - The Bright Future
 
-Once there is a runtime though, all the good use cases for ZKML can be tested. Hopefuly (provided our implementation has good performance) proving some bigger models than is currently pracical. Basically a bunch of products from on-chain gaming to DeFi can be created or improved. Then further research can include proof of training (still challenging part of ZKML, considered mostly impractical with the current tech) apart from, obviously, performance optimization work.
+Once there is a runtime though, all the good use cases for ZKML can be tested. Hopefuly (provided our implementation has good performance) proving some bigger models than is currently pracical. Basically a bunch of products from on-chain gaming to DeFi can be created or improved. Then further research can include proof of training (still challenging part of ZKML, considered mostly impractical with the current tech) apart from, obviously, on-going performance optimization work.
