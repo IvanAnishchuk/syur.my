@@ -32,17 +32,41 @@ https://github.com/TAMUCrypto/zkCNN
 
 https://github.com/jvhs0706/zkllm-ccs2024
 
+(Custom proof system for LLaMa inference.)
+
 https://ezkl.xyz/
+
+(Arguably one of the more practical runtimes. Still limited, not FOSS anymore.)
 
 https://medium.com/@ingonyama/icicle-v3-1c9cc2f94402
 
+(Acceleration library for ZK proofs, now backend agnostic)
+
 https://github.com/ingonyama-zk/icicle/releases/tag/v3.0.0
+
+### More research
+
+[CYY24] {zkMatrix} https://eprint.iacr.org/2024/161
+
+This actually shows good results for matrix multiplication specifically, I tested benchmarks. It could prove useful for ML-related operations, much of them can be decomposed into batches of simple matrix operations, with Einstein notation and possibly this
+
+https://github.com/sonos/tract
+
+(A tool to optimize and declutter ML models. EZKL use this approach instead of having custom proof systems for each operation.)
+
+Also on the LogUp+GKR front I reviewed and tested implementation in winterfell
+
+https://github.com/facebook/winterfell/pull/302
+
+(Hard to estimate if it's hard or easy to apply sqauring circuits optimization there but it's worth another look.)
 
 ### Rough execution plan breakdown
 
 1 - Core research and PoC
 
-We are currently here. I've seen some very practical applications of sum-check (lasso+jolt) and quite impractical ZKML provers. My believe is it's not that hard to hack loGKR or similar protocol to suit ZKML inference needs and PoC runtime supporting just a couple simple operations can be produced in a few months of work and benchmarked against other implementations (RMSNorm is pretty common, for example, I'd start there)
+We are currently here (will be for a while, with no support I'll be slow and distracted, which is maybe okay actually, it starts feeling like this is going to take a while a needs a pause to think and regroup). I've seen some very practical applications of sum-check (lasso+jolt) and quite impractical ZKML provers. My believe is it's not that hard to hack loGKR or similar protocol to suit ZKML inference needs and PoC runtime supporting just a couple simple operations can be produced in a few months of work and benchmarked against other implementations (RMSNorm is pretty common, for example, I'd start there)
+
+My very first step is to read and reread those articles in the references and then some more and try to see and test each cool thing in code. An attempt to make zkMatrix for a simple tensor operation and a lookup argument for some other will be the next but we are not there yet.
 
 2 - Active development
 
